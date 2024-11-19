@@ -45,7 +45,7 @@ Let's walk through how to use the scraper:
     python main.py
     ```
 ### Output
-The scraper will save the results in [free_scraper_output.json](https://github.com/triposat/google-maps/blob/main/sample_data/free_scraper_output.json), containing:
+The scraper will save the results in [free_scraper_output.json](https://github.com/luminati-io/Google-Maps-Scraper/blob/main/sample_data/free_scraper_output.json), containing:
 ```json
 {
     "reviewer_name": "Jacqueline",
@@ -88,9 +88,9 @@ Plus, you get **20 free API calls** to test it out.
 ## Using Google Maps Scraper API
 You can collect detailed Google Maps reviews by simply providing a URL.
 
-<img width="700" alt="bright-data-web-scraper-api-google-maps-reviews" src="https://github.com/user-attachments/assets/c4de8446-9c23-4cf2-bd77-87e30e5be610">
+<img width="700" alt="bright-data-web-scraper-api-google-maps-reviews" src="https://github.com/luminati-io/Google-Maps-Scraper/blob/main/google-maps-review-example.PNG">
 
-> For a detailed guide on setting up the Google Maps Scraper API, check our [Step-by-Step Setup Guide](https://github.com/triposat/google-maps/blob/main/scraper_api_setup.md#setting-up-google-maps-scraper-api).
+> For a detailed guide on setting up the Google Maps Scraper API, check our [Step-by-Step Setup Guide](https://github.com/luminati-io/Google-Maps-Scraper/blob/main/scraper_api_setup.md#setting-up-google-maps-scraper-api).
 
 **Key Input Parameters:**
 
@@ -133,7 +133,7 @@ You can collect detailed Google Maps reviews by simply providing a URL.
     }
   }
 ```
-You can view the full output by downloading [this sample JSON file](https://github.com/triposat/google-maps/blob/main/sample_data/api_scraper_output.json).
+You can view the full output by downloading [this sample JSON file](https://github.com/luminati-io/Google-Maps-Scraper/blob/main/sample_data/api_scraper_output.json).
 
 **Code Example:**
 
@@ -235,12 +235,12 @@ if __name__ == "__main__":
 ```
 
 **How the Code Works:**
-1. **API Token Required:** First, you'll need an API token. If you don't have one yet, follow our [Google Maps Scraper API setup guide](https://github.com/triposat/google-maps/blob/main/scraper_api_setup.md#setting-up-google-maps-scraper-api).
+1. **API Token Required:** First, you'll need an API token. If you don't have one yet, follow our [Google Maps Scraper API setup guide](https://github.com/luminati-io/Google-Maps-Scraper/blob/main/scraper_api_setup.md#setting-up-google-maps-scraper-api).
 2. **Start Data Collection:** Pass your API token to the code, and it will initiate data collection with your specified parameters. This returns a `snapshot_id` that you'll use to track your request.
 3. **Wait for Results:** The data collection takes a few minutes to complete. During this time, our code continuously checks the `snapshot_id` status:
     - Status "running" = Data is still being collected
     - Status "ready" = Data collection is complete and saved to your JSON file
-4. **Additional Parameters:** You can customize your data collection by adding more parameters to the `_trigger_collection` function. Check the [next section](https://github.com/triposat/google-maps?tab=readme-ov-file#customizing-data-collection-with-api-parameters) to see what parameters are available and learn about different data delivery methods.
+4. **Additional Parameters:** You can customize your data collection by adding more parameters to the `_trigger_collection` function. Check the [next section](https://github.com/luminati-io/Google-Maps-Scraper?tab=readme-ov-file#customizing-data-collection-with-api-parameters) to see what parameters are available and learn about different data delivery methods.
 
 ### Customizing Data Collection with API Parameters
 Use the following API parameters to customize your data collection:
